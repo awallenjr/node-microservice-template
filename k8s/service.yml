@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-microservice-template
+spec:
+  selector:
+    app: node-microservice-template
+  ports:
+    - protocol: TCP
+      port: 80  # Exposed port on the service
+      targetPort: 8080  # Port on the pod
+  type: NodePort  # Expose service externally via NodePort

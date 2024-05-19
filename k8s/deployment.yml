@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-microservice-template
+spec:
+  replicas: 1  # Number of replicas (pods)
+  selector:
+    matchLabels:
+      app: node-microservice-template
+  template:
+    metadata:
+      labels:
+        app: node-microservice-template
+    spec:
+      containers:
+        - name: node-microservice-template
+          image: awallenjr83/node-microservice-template:latest
+          ports:
+            - containerPort: 8080
+
