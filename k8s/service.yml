@@ -9,4 +9,5 @@ spec:
     - protocol: TCP
       port: 80  # Exposed port on the service
       targetPort: 8080  # Port on the pod
+      nodePort: 31001
   type: NodePort  # Expose service externally via NodePort
