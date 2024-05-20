@@ -7,7 +7,6 @@ spec:
     app: node-microservice-template
   ports:
     - protocol: TCP
-      port: 80  # Exposed port on the service
-      targetPort: 8080  # Port on the pod
-      nodePort: 31002
-  type: NodePort  # Expose service externally via NodePort
+      port: 80
+      targetPort: 8080
+  type: ClusterIP
