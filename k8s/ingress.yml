@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: node-microservice-template-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: node-service.anthony-allen.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: node-microservice-template
+            port:
+              number: 80

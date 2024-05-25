@@ -7,7 +7,7 @@ A simple starter template for microservices in GO.
 
 Kubernetes is an open-source container orchestration platform used for automating the deployment, scaling, and management of containerized applications.
 
-Click here for the [Online tutorial I found very useful](https://www.cherryservers.com/blog/install-kubernetes-on-ubuntu)
+Click here for the [Online tutorial I found very useful](https://www.cherryservers.com/blog/install-kubernetes-on-ubuntu) | [and here also](https://phoenixnap.com/kb/install-kubernetes-on-ubuntu)
 
 ## Uninstalling Docker and Kubernetes
 
