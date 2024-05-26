@@ -7,6 +7,10 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
   ingressClassName: nginx
+  tls:
+  - hosts:
+    - node-service.anthony-allen.com
+    secretName: node-microservice-template-tls
   rules:
   - host: node-service.anthony-allen.com
     http:
